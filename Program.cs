@@ -1,8 +1,12 @@
+using AmiSoftCShare.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Configuration.GetConnectionString("DeffaultConecction");
+
+builder.Services.AddDbContext<amisoftdatabaseContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version())));
 
 var app = builder.Build();
 

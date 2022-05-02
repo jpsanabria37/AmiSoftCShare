@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\laragon\\www\\C#\\AmiSoftCShare\\Views\\TipoDocumento\\create.cshtml",
+      "TargetPath": "Views\\TipoDocumento\\create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\laragon\\www\\C#\\AmiSoftCShare\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

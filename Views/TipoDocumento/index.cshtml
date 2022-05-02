@@ -1,1 +1,18 @@
-gonorrea
+@model IEnumerable<TipoDocumento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if(TempData["ResultOk"] != null){
+    <h1 class="alert-success">@TempData["ResultOk"]</h1>
+}
+
+<div class="container box-shadow p-5">
+    <div class="col mb-3">
+        <a asp-controller="TipoDocumento" asp-action="Create" class="btn btn-lg btn-primary">
+            <i class="bi bi-file-plus-fill"></i>
+            Nuevo Tipo Documento
+        </a>
+    </div>
+</div>
